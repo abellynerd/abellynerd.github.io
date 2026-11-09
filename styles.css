@@ -104,10 +104,14 @@ p { margin: 0 0 20px; max-width: 650px; }
 .cv-toggle {
   color: #626c78;
   cursor: pointer;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 .cv-toggled {
   color: #17324d;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 .site-main.text-only {
