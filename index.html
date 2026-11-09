@@ -1,38 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="Abel Lynerd, undergraduate student in mathematics at the University of Virginia.">
 
-    <title>Abel Lynerd</title>
+  <title>Abel Lynerd</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/png" href="Images/favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
 </head>
 <body>
-<nav class="navbar navbar-expand-sm bg-light">
-    
-    <div class="container-fluid">
-        <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link 1</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link 2</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link 3</a>
-      </li>
-        </ul>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="identity">
+        <a class="site-name" href="index.html">Abel Lynerd</a>
+        <p>Undergraduate student · University of Virginia</p>
+      </div>
+      <nav aria-label="Main navigation">
+          <a href="index.html" aria-current="page">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="Work.html">Work</a>
+          <a href="cv.html">CV</a>
+      </nav>
     </div>
+  </header>
+  <main id="main" class="site-main">
 
-</nav>
+    <div id="photos" class="carousel slide" data-bs-ride="carousel">
 
-    Hello World!!
+  <!-- Indicators/dots -->
+  <!-- <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div> -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="app.js"></script>
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+    <!-- <div class="carousel-item active" data-bs-interval="5000">
+      <img src="assets/abel-lynerd.jpg" alt="Abel Lynerd" class="d-block w-100">
+    </div> -->
+    <!-- <div class="carousel-item" data-bs-interval="5000">
+      <img src="assets/humpback.jpg" alt="hiking at humpback rock" class="d-block w-100">
+    </div> -->
+    <div class="carousel-item active" data-bs-interval="5000">
+      <img src="assets/bus.jpg" alt="" class="d-block w-100">
+    </div>
+  </div>
+</div>
+
+<section class="page-content" aria-labelledby="page-title">
+<!-- <h1 id="page-title">About me</h1> -->
+     <p>
+  I am a second-year math student at the <a href="https://www.math.virginia.edu/">University of Virginia</a>, interested in spectral theory and graph theory. I also major in music, with a concentration in composition.   
+</p>
+
+<p>
+  I love puzzles. Crosswords, sudoku, Rubik’s cubes, you name it; I’m addicted to the epiphany of deciphering a really punny clue, or twisting the last algorithm to line up the colors. This feeling is what draws me to study mathematics. Whether I’m figuring out the best approach to a real-world problem, coming up with a research methodology, or writing a proof, mathematics presents a fantastic puzzle.
+</p>
+
+<p>
+  Outside of mathematics, I enjoy playing trumpet for the Cavalier Marching Band, cooking, building LEGO, and mountain biking. In addition to my native English, je parle français és magyarul beszélek!
+</p>
+</section>
+    <section class="page-content" aria-labelledby="page-title">
+      <h1 id="page-title">Contact</h1>
+
+        <p class="contact">
+          Email: <a href="mailto:ven2wd@virginia.edu">ven2wd@virginia.edu</a>
+          Phone: <a href="tel:+17577515340">+1.757.751.5340</a> <br>
+          <a href="https://www.linkedin.com/in/abel-lynerd-b951b4361/">Linkedin</a> 
+        </p>
+          
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner"><span>© 2026 Abel Lynerd</span><a href="https://www.math.virginia.edu/">University of Virginia</a></div>
+  </footer>
 </body>
 </html>
