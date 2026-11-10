@@ -79,39 +79,32 @@ p { margin: 0 0 20px; max-width: 650px; }
   grid-template-columns: 200px auto; */
 }
 
-.sidebar,
-.content {
-    display: flex;
-    flex-direction: column;
-    /* min-height: 500px; */
-    /* border-radius: 4px; */
-    /* margin: 20px; */
-    /* border:1px solid #777; */
-}
-
-.content {
-  flex-grow: 5;
-  min-width: 50%;
-  padding-right: .5em;
-  padding-left: .5em;
-  align-items: center;
-  border-right: 1px solid #17324d ;
-}
-
-.sidebar {
-  flex-grow: 1;
-  min-width: 25%;
-  padding-right: .5em;
-  padding-left: .5em;
-}
-
-.picturetext {
+.hovertext {
   text-decoration: underline;
-  cursor: help;
+  cursor: default;
 }
 
-.picturetext:hover {
-  text-decoration: none;
+.hovertext:hover {
+  /* text-decoration: none; */
+}
+
+.hoverpicture {
+  display: none;
+  position: fixed;
+  /* border: 2px solid #ccc; */
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  pointer-events: none;
+  max-width: 50%;
+  max-height: 50%;
+  width: auto;
+  height: auto;
+}
+
+.button-toggled {
+  transform-origin: 40% 50%;
+  transform: rotate(90deg);
+  display: inline-block;
 }
 
 .cv-toggle {
