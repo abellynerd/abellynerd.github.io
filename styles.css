@@ -101,6 +101,15 @@ p { margin: 0 0 20px; max-width: 650px; }
   padding-left: .5em;
 }
 
+.picturetext {
+  text-decoration: underline;
+  cursor: help;
+}
+
+.picturetext:hover {
+  text-decoration: none;
+}
+
 .cv-toggle {
   color: #626c78;
   cursor: pointer;
