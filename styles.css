@@ -9,8 +9,12 @@
   --link: #245d94;
 }
 * { box-sizing: border-box; }
-html { color-scheme: light; }
-body { margin: 0; min-height: 100vh; display: flex; flex-direction: column; background: var(--paper); color: var(--ink); font-family: Arial, Helvetica, sans-serif; font-size: 17px; line-height: 1.75; }
+html { color-scheme: light; margin-left: 0;
+    margin-right: calc(100% - 100vw); overflow-x: hidden;}
+body { margin: 0; min-height: 100vh; display: flex; flex-direction: column; background: var(--paper); color: var(--ink); 
+  /* font-family: Georgia, 'Times New Roman', serif */
+  font-family: Arial, Helvetica, sans-serif; 
+  font-size: 17px; line-height: 1.75; }
 a { color: var(--link); text-underline-offset: .2em; text-decoration-thickness: 1px; }
 a:hover { text-decoration-thickness: 2px; }
 a:focus-visible { outline: 2px solid currentColor; outline-offset: 5px; border-radius: 2px; }

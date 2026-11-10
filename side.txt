@@ -1,0 +1,65 @@
+
+
+Sample of cursor hover image (courtesy of ChatGPT)
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.tooltip {
+    display: inline-block;
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+}
+
+#preview {
+    display: none;
+    position: fixed;
+    width: 200px;
+    pointer-events: none;
+    z-index: 9999;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+</style>
+</head>
+<body>
+
+<p>
+    Hover over
+    <span class="tooltip"
+          onmouseenter="showImage(event)"
+          onmousemove="moveImage(event)"
+          onmouseleave="hideImage()">
+        this text
+    </span>
+    to see the image!
+</p>
+
+<img id="preview"
+     src="https://placehold.co/400x300"
+     alt="Preview">
+
+<script>
+const preview = document.getElementById("preview");
+
+function showImage(event) {
+    preview.style.display = "block";
+    moveImage(event);
+}
+
+function moveImage(event) {
+    const offset = 15;
+
+    preview.style.left = (event.clientX + offset) + "px";
+    preview.style.top = (event.clientY + offset) + "px";
+}
+
+function hideImage() {
+    preview.style.display = "none";
+}
+</script>
+
+</body>
+</html>
