@@ -1,47 +1,86 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="color-scheme" content="light">
-  <meta name="description" content="Abel Lynerd, undergraduate student in mathematics at the University of Virginia.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light" />
+    <meta
+      name="description"
+      content="Abel Lynerd, undergraduate student in mathematics at the University of Virginia."
+    />
 
-  <title>CV | Abel Lynerd</title>
+    <title>CV | Abel Lynerd</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" type="image/png" href="assets/favicon.png">
-</head>
-<body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
-    <div class="header-inner">
-      <div class="identity">
-        <a class="site-name" href="index.html">Abel Lynerd</a>
-        <p>Undergraduate student · University of Virginia</p>
-      </div>
-      <nav aria-label="Main navigation">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <div class="identity">
+          <a class="site-name" href="index.html">Abel Lynerd</a>
+          <p>Undergraduate student · University of Virginia</p>
+        </div>
+        <nav aria-label="Main navigation">
           <a href="index.html">About</a>
           <a href="projects.html">Projects</a>
           <a href="work.html">Work</a>
           <a href="cv.html" aria-current="page">CV</a>
-      </nav>
-    </div>
-  </header>
+        </nav>
+      </div>
+    </header>
 
-  <main id="main" class="site-main text-only">
-    <!-- <p>I have a professional CV for general employment, and an academic CV for mathematics-specific inquiries.</p> -->
-    <div style="text-align: center; margin-top: -2em; margin-bottom: -2em">
-      <span id="procv" class="cv-toggle"><span id="probut">▶</span> Professional</span> <span id="acacv" class="cv-toggle"><span id="acabut">▶</span> Academic</span>
-    </div>
+    <main id="main" class="site-main text-only">
+      <!-- <p>I have a professional CV for general employment, and an academic CV for mathematics-specific inquiries.</p> -->
+      <div style="text-align: center; margin-top: -2em; margin-bottom: -2em">
+        <span id="procv" class="cv-toggle"
+          ><!-- <span id="probut">▶</span> -->
+          Professional</span
+        >
+        <span id="acacv" class="cv-toggle"
+          ><!-- <span id="acabut">▶</span> -->
+          Academic</span
+        >
+      </div>
 
-    <embed id="procv-display" style="width: 100%; height:60em; display: none; margin-top: -2em; margin-bottom: -3em;" src="assets/CV_Professional.pdf" type="application/pdf">
-    <embed id="acacv-display" style="width: 100%; height:60em; display: none; margin-top: -2em; margin-bottom: -3em;" src="assets/CV_Academic.pdf" type="application/pdf">
-  </main>
+      <embed
+        id="procv-display"
+        style="
+          width: 100%;
+          height: 60em;
+          display: none;
+          margin-top: -2em;
+          margin-bottom: -3em;
+        "
+        src="assets/CV_Professional.pdf"
+        type="application/pdf"
+      />
+      <embed
+        id="acacv-display"
+        style="
+          width: 100%;
+          height: 60em;
+          display: none;
+          margin-top: -2em;
+          margin-bottom: -3em;
+        "
+        src="assets/CV_Academic.pdf"
+        type="application/pdf"
+      />
+    </main>
 
-  <footer class="site-footer">
-    <div class="footer-inner"><span>© 2026 Abel Lynerd</span><a href="https://www.math.virginia.edu/">University of Virginia</a></div>
-  </footer>
-  <script src="app.js"></script>
-</body>
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <span>© 2026 Abel Lynerd</span
+        ><a href="https://www.math.virginia.edu/">University of Virginia</a>
+      </div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
 </html>
