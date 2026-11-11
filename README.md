@@ -1,3 +1,1 @@
-My professional website; visit at [abellynerd.github.io/
-](abellynerd.github.io/
-).
+My professional website; visit at [abellynerd.github.io/](https://abellynerd.github.io/).
